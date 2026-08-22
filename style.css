@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background: #101827;
+
+    color: white;
+
+    min-height: 100vh;
+
+}
+
+
+.container {
+
+    width: 92%;
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding: 40px 0;
+
+    text-align: center;
+
+}
+
+
+h1 {
+
+    font-size: 38px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.subtitle {
+
+    color: #aab4c5;
+
+    margin-bottom: 30px;
+
+}
+
+
+.card {
+
+    background: #1b2638;
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    box-shadow:
+        0 10px 30px
+        rgba(0,0,0,0.3);
+
+}
+
+
+.weather-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 15px;
+
+    margin-top: 25px;
+
+}
+
+
+.weather-item {
+
+    background: #253249;
+
+    border-radius: 15px;
+
+    padding: 20px 10px;
+
+}
+
+
+.weather-item span {
+
+    display: block;
+
+    font-size: 30px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.weather-item strong {
+
+    display: block;
+
+    font-size: 21px;
+
+}
+
+
+.weather-item small {
+
+    color: #aab4c5;
+
+}
+
+
+.forecast-section {
+
+    margin-top: 35px;
+
+}
+
+
+.forecast-container {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 15px;
+
+}
+
+
+.forecast-card {
+
+    background: #1b2638;
+
+    border-radius: 18px;
+
+    padding: 20px 10px;
+
+    transition: transform 0.2s;
+
+}
+
+
+.forecast-card:hover {
+
+    transform: translateY(-5px);
+
+}
+
+
+.forecast-card h3 {
+
+    margin-top: 0;
+
+}
+
+
+.forecast-icon {
+
+    font-size: 42px;
+
+    margin: 10px 0;
+
+}
+
+
+.forecast-score {
+
+    font-size: 34px;
+
+    font-weight: bold;
+
+    margin: 15px 0 5px;
+
+}
+
+
+.warning {
+
+    margin-top: 25px;
+
+    padding: 18px;
+
+    border-radius: 15px;
+
+    background: #2a2630;
+
+    color: #ffc857;
+
+    font-size: 14px;
+
+}
+
+
+@media (max-width: 800px) {
+
+    .weather-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+    .forecast-container {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    h1 {
+
+        font-size: 28px;
+
+    }
+
+    .forecast-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
