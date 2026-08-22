@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Class Suspension Predictability Machine
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+<main class="container">
+
+    <h1>
+        Class Suspension<br>
+        Predictability Machine
+    </h1>
+
+    <p class="subtitle">
+        Manila City • 7-Day Forecast
+    </p>
+
+
+    <!-- CURRENT WEATHER -->
+
+    <section class="card">
+
+        <h2>
+            📍 Manila City
+        </h2>
+
+        <div id="loading">
+            Getting latest weather...
+        </div>
+
+
+        <div
+            id="weather"
+            style="display:none;"
+        >
+
+            <div class="weather-grid">
+
+
+                <div class="weather-item">
+
+                    <span>🌡️</span>
+
+                    <strong id="temperature">
+                        --
+                    </strong>
+
+                    <small>
+                        Temperature
+                    </small>
+
+                </div>
+
+
+                <div class="weather-item">
+
+                    <span>🌧️</span>
+
+                    <strong id="rain">
+                        --
+                    </strong>
+
+                    <small>
+                        Rain
+                    </small>
+
+                </div>
+
+
+                <div class="weather-item">
+
+                    <span>💨</span>
+
+                    <strong id="wind">
+                        --
+                    </strong>
+
+                    <small>
+                        Wind
+                    </small>
+
+                </div>
+
+
+                <div class="weather-item">
+
+                    <span>☁️</span>
+
+                    <strong id="condition">
+                        --
+                    </strong>
+
+                    <small>
+                        Condition
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- 7 DAY FORECAST -->
+
+    <section class="forecast-section">
+
+        <h2>
+            📅 7-Day Suspension Forecast
+        </h2>
+
+
+        <div
+            id="forecast"
+            class="forecast-container"
+        >
+
+        </div>
+
+    </section>
+
+
+    <!-- WARNING -->
+
+    <section class="warning">
+
+        ⚠️ <strong>Important:</strong>
+
+        This machine provides an experimental
+        weather-based estimate only.
+
+        It is NOT an official class suspension
+        announcement.
+
+        Always follow announcements from your
+        school, LGU, and DepEd.
+
+    </section>
+
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
